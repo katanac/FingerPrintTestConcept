@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url 'https://pkgs.dev.azure.com/plustechnologies-external/_packaging/MobileFingerprintAndroid/maven/v1' // Clientes
+            //url 'https://pkgs.dev.azure.com/plustechnologies/_packaging/MobileFingerprintAndroid/maven/v1' // Desarrollo
+            credentials {
+                username "plustechnologies-external"
+                password "l3zsikotovnfegvrpgw4mqjy5wtswalpo7537v4llpu3amhc3bsq"  }
+        }
+    }
+}
+rootProject.name = "PrubaConceptoFingerPrint"
+include ':app'
